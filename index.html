@@ -11,82 +11,253 @@
   </head>
   <body>
     <header>
-      <nav class="nav-extended">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1">Test 1</a></li>
-            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab"><a href="#test4">Test 4</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header-wrapper">
+        <div class="container">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">
+                <img src="images/logo.png" alt="">
+              </a>
+              <div class="nav-content right">
+                <ul id="nav-mobile" class="tabs-transparent tabs hide-on-med-and-down">
+                  <li class="tab"><a href="#">Home</a></li>
+                  <li class="tab"><a href="#">Pages</a></li>
+                  <li class="tab"><a href="#">Features</a></li>
+                  <li class="tab"><a href="#">Extensions</a></li>
+                  <li class="tab"><a href="#">Tutorials</a></li>
+                  <li class="tab"><a href="#">Contact us</a></li>
+                </ul>
+                <!-- <div class="clearfix"></div> -->
+                <div class="social-icons hide-on-med-and-down">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Extensions</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Contact us</a></li>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-skype" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </ul>
+            </div><!-- nav-wrapper container ends -->
+          </nav>
+          <div class="welcome-text">
+            <h1 class="white-text center-align">Creatives</h1><br>
+            <h4>Always be yourself, express yourself, have faith in yourself. Do not go out and look for a successful personality and duplicate it.</h4>
+          </div>
 
+          <div class="scroll-space center-align">
+            <p class="white-text">Scroll down</p>
+            <div class="scroll_down"><i class="white-text material-icons">keyboard_arrow_down</i></div>
+          </div>
+        </div><!-- container ends -->
+      </div><!-- header-wrapper ends-->
     </header>
+    <section class="features">
+      <div class="container">
+        <!-- carousel begins here -->
+        <div class="carousel carousel-slider center" data-indicators="true">
+          <div class="carousel-item" href="#one!">
+            <div class="w-letter"><h1 class="center-align">W</h1></div>
+            <div><h3 class="white-text center-align">We Are An Awesome Agency</h1></div>
+            <div class="row slider-row">
+              <div class="col m6 s12 l6">
+                <div class="first-feature">
+                  <div class="feature-icon">
+                    <i class="white-text material-icons">question_answer</i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="white-text">feature one</h6>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id atque quidem dignissimos expedita!</p>
+                  </div>
+                </div><!-- first-feature ends-->
+              </div>
+              <div class="col m6 s12 l6">
+                <div class="second-feature">
+                  <div class="feature-icon">
+                    <i class="white-text material-icons">work</i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="white-text">feature two</h6>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id atque quidem dignissimos expedita!</p>
+                  </div>
+                </div><!-- second-feature ends-->
+              </div>
+            </div><!-- row ends -->
+          </div>
+          <div class="carousel-item" href="#two!">
+            <div class="w-letter"><h1 class="center-align">W</h1></div>
+            <div class="row slider-row-second">
+              <div class="col m6 s12 l6">
+                <div class="third-feature">
+                  <div class="feature-icon">
+                    <i class="white-text material-icons">games</i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="white-text">feature three</h6>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id atque quidem dignissimos expedita!</p>
+                  </div>
+                </div><!-- third-feature ends-->
+              </div>
+              <div class="col m6 s12 l6">
+                <div class="forth-feature">
+                  <div class="feature-icon">
+                    <i class="white-text material-icons">new_releases</i>
+                  </div>
+                  <div class="feature-text">
+                    <h6 class="white-text">feature four</h6>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id atque quidem dignissimos expedita!</p>
+                  </div>
+                </div><!-- forth-feature ends-->
+              </div>
+            </div>
+          </div><!-- carousel item two ends -->
+        </div> <!--  carousel ends here  -->
+      </div><!-- container ends-->
+    </section><!-- feature section ends-->
+    <section class="blog_details">
+        <div class="row">
+          <div class="no-padding col s12 m6 l6">
+            <div class="blog-text white-text grey darken-3">
+              <div class="container">
+                <span>Jan 4, 2016   |   In Culture</span>
+                <h5>Akita Inu Dog</h5>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p></div>
+            </div>
+          </div>
+          <div class="no-padding col s12 m6 l6">
+            <div class="blog-pic01">
+              <img class="responsive-img" src="images/blog-pic01.jpg">
+            </div>
+          </div>
+        </div><!-- row ends -->
+        <div class="row">
+          <div class="no-padding col s12 m6 l6">
+            <div class="blog-pic02">
+              <img class="responsive-img" src="images/blog-pic02.jpeg">
+            </div>
+          </div>
+          <div class="no-padding col s12 m6 l6">
+            <div class="blog-text black-text grey lighten-3">
+              <div class="container">
+                <span>Jan 4, 2016   |   In Culture</span>
+                <h5>Akita Inu Dog</h5>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p></div>
+            </div>
+          </div>
+        </div><!-- row ends -->
+    </section><!-- blog_details section ends -->
+    <section class="quotes">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6 m6">
+            <i class="white-text left fa fa-pencil-square-o" aria-hidden="true"></i>
+            <p class="white-text">“If you don't like something, change it. If you can't change it, change your attitude. Don't complain.”</p>
+          </div>
+          <div class="col s12 l6 m6">
+            <i class="white-text left fa fa-pencil-square-o" aria-hidden="true"></i>
+            <p class="white-text">“The reason why people give up so fast is because they tend to look at how far they still have to go, instead of how far they have gotten.</p>
+          </div>
+        </div><!--row ends-->
+      </div><!-- container ends -->
+    </section><!-- quotes section ends -->
 
+    <section class="custom_parallax">
+      <div class="container">
+        <p class="cyan-text text-cyan-lighten-1 center-align">don't forget to have a rest</p>
+      </div>
+    </section>
+    <section class="blog_posts">
+      <div class="container">
+        <div class="b-letter"><h1 class="grey-text center-align">B</h1></div>
+        <div><h3 class="black-text center-align">let's blog</h1></div>
+        <h4 class="black-text center-align">We love clean design and advanced digital solutions.</h4>
+        <div class="row">
+          <div class="col l3 m3 s12 center-align">
+            <div class="bpost-pic">
+              <img class="responsive-img" src="images/bpost-pic1.png" alt="">
+              <p class="blue-text text-darken-1 anim-text01">Believe in yourself &#10084</p>
+            </div>
+            <h6 class="blue-text">Fresh Summer Campaign</h6>
+            <p>Cum sociis natoque penatibus et<br> magnis dis parturient montes,<br> nascetur ridiculus mus.
+              Lorem<br> ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed odio dui.<br>
+              Vivamus sagittis lacus vel augue</p>
+          </div>
+          <div class="col l3 m3 s12 center-align">
+            <div class="bpost-pic">
+              <img class="responsive-img" src="images/bpost-pic2.png" alt="">
+              <p class="blue-text text-darken-1 anim-text02">Trust yourself &#10084</p>
+            </div>
+            <h6 class="blue-text">Fresh Summer Campaign</h6>
+            <p>Cum sociis natoque penatibus et<br> magnis dis parturient montes,<br> nascetur ridiculus mus.
+              Lorem<br> ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed odio dui.<br>
+              Vivamus sagittis lacus vel augue</p>
+          </div>
+          <div class="col l3 m3 s12 center-align">
+            <div class="bpost-pic">
+              <img class="responsive-img" src="images/bpost-pic3.png" alt="">
+              <p class="blue-text text-darken-1 anim-text03">Love yourself &#10084</p>
 
+            </div>
+            <h6 class="blue-text">Fresh Summer Campaign</h6>
+            <p>Cum sociis natoque penatibus et<br> magnis dis parturient montes,<br> nascetur ridiculus mus.
+              Lorem<br> ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed odio dui.<br>
+              Vivamus sagittis lacus vel augue</p>
+          </div>
+          <div class="col l3 m3 s12 center-align">
+            <div class="bpost-pic">
+              <img class="responsive-img" src="images/bpost-pic4.png" alt="">
+              <p class="blue-text text-darken-1 anim-text04">Be yourself &#10084</p>
 
+            </div>
+            <h6 class="blue-text">Fresh Summer Campaign</h6>
+            <p>Cum sociis natoque penatibus et<br> magnis dis parturient montes,<br> nascetur ridiculus mus.
+              Lorem<br> ipsum dolor sit amet, consectetur<br> adipiscing elit. Donec sed odio dui.<br>
+              Vivamus sagittis lacus vel augue</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- blog_posts section ends -->
+    <section class="material_parallax">
+      <div class="parallax-container">
+        <div class="parallax"><img class="responsive-img" src="images/parallaxjs01.jpeg"></div>
+      </div>
+    </section><!-- material_parallax section ends-->
+    <section class="works-gallery"><!-- Take this part from Brandi PSD -->
+      <div class="container">
+        <h1 class="center-align">Love is in the air</h1>
+        <div class="flex-gallery">
+          <div class="gallery-item"><img src="images/gallery-item01.png" alt="" class="responsive-img"></div>
+          <div class="gallery-item"><img src="images/gallery-item02.png" alt="" class="responsive-img"></div>
+          <div class="gallery-item"><img src="images/gallery-item03.png" alt="" class="responsive-img"></div>
+          <div class="gallery-item"><img src="images/gallery-item04.png" alt="" class="responsive-img"></div>
+          <div class="gallery-item"><img src="images/gallery-item05.png" alt="" class="responsive-img"></div>
+          <div class="gallery-item"><img src="images/gallery-item06.png" alt="" class="responsive-img"></div>
+        </div>
+      </div>
+    </section><!-- works-gallery ends -->
+    <section class="about">
+      <div class="container">
+        
+      </div>
+    </section><!-- about section ends -->
+    <section>
+      <div class="container"></div>
+    </section>
 
 
     <footer></footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
