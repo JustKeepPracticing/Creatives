@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 $(".button-collapse").sideNav();
 $(".scroll_down").click(function() {
-  $("html, body").animate({ scrollTop: $(document).height() }, 800);
+  $("html, body").animate({ scrollTop: $('.features').height() });
 });
 
 $(".feature-icon").hover(function() {
@@ -18,5 +18,8 @@ $(".feature-icon").hover(function() {
   $(".parallax").parallax();
 
 });
+
+$('.collapsible').collapsible();
+
 
 $('.carousel.carousel-slider').carousel({fullWidth: true});
