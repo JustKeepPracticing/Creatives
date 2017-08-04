@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 $(".button-collapse").sideNav();
 $(".scroll_down").click(function() {
-  $("html, body").animate({ scrollTop: $('.features').height() });
+  ;
 });
 
 $(".feature-icon").hover(function() {
