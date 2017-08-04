@@ -2,11 +2,38 @@ nav
   background-color: transparent
 
 .nav-wrapper
-  padding: 15
+  padding: 15px
+
+.nav-content
+  @include flexbox
+  align-items: baseline
+  ul
+    @include flexbox
+
+.social-icons
+  @include flexbox
+  margin-left: 50px
+  a
+    margin-right: 30px
+    font-size: 14px
+    &:first-of-type
+      &:hover
+        color: $fb-brand-color
+    &:nth-of-type(2)
+      &:hover
+        color: $twit-brand-color
+    &:nth-of-type(3)
+      &:hover
+        color: $skype-brand-color
+    &:last-of-type
+      margin-right: 0
+      &:hover
+        color: $linkedin-brand-color
+
 
 #mobile-demo
-  background-color: $default_blue
+  background-color: $dark_blue
 
 #nav-mobile
   .indicator
-    background-color: $default_blue
+    background-color: $dark_blue

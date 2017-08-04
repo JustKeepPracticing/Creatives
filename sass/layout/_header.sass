@@ -4,3 +4,50 @@
   background-repeat: no-repeat
   background-size: cover
   height: 800px
+
+.welcome-text
+  margin-top: 240px
+  h1
+    text-transform: uppercase
+    @include letter-space(.8rem)
+    // @include transform(matrix(3, 0, 0, 3, 0, 0))
+    font-weight: bold
+    // position: absolute
+    // left: 721px
+    // top: 290px
+  h4
+    text-transform: capitalize
+    color: $dark_blue
+    @include line-height(50px)
+
+.scroll-space
+  margin-top: 110px
+  text-transform: capitalize
+  p
+    font-size: $font-small
+
+.scroll_down
+  a
+    display: inline-block
+    height: 60px
+    width: 60px
+    @include border-radius(50%)
+    border: 1px solid $white
+    i
+      @include line-height(60px)
+    &:hover
+      i
+        // margin-top: 5px
+        transition: .5s ease-in-out
+        @include transform(scale(1.3)translateY(8px))
+
+// medias
+
+@media #{$xs-mobile-device}
+  .welcome-text
+    margin-top: 140px
+    h1
+      font-size: 39px
+    h4
+      font-size: 2rem
+      @include line-height(35px)

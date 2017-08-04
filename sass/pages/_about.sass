@@ -3,7 +3,10 @@
   background-repeat: no-repeat
   background-size: cover
   height: 850px
+  padding-top: 100px
 
-// for mobile devices add this lines
+  @media #{$xs-mobile-device}
     height: 100vh
     background-position: center center
+    br
+      display: none

@@ -1,0 +1,35 @@
+.custom_parallax
+  background-image: url(../images/beach-resting.jpeg)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  height: 500px
+  i
+    animation: scale 2s infinite
+
+  @keyframes scale
+    from
+      transform: scale(1.4)
+    to
+      transform: scale(1)
+
+  @media #{$s-mobile-device}
+    background-size: contain
+    height: 270px
+    background-attachment: scroll
+
+
+.parallax-container
+  opacity: .7
+
+.flex-wrapper
+  justify-content: center
+  height: 372px
+  font-size: $font-medium
+  text-transform: capitalize
+  span
+    margin-right: 10px
+    font-style: italic
+    @include letter-space(4px)
+    @media #{$s-mobile-device}
+      @include letter-space(0)
