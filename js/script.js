@@ -6,20 +6,23 @@ $(document).ready(function() {
     padding: "15px"
   });
 
-$(".button-collapse").sideNav();
-$(".scroll_down").click(function() {
-  ;
-});
+  $(".button-collapse").sideNav();
+  $(".scroll_down").click(function() {
 
-$(".feature-icon").hover(function() {
-  $(this).toggleClass("z-depth-2");
-});
+  });
+
+  $(".feature-icon").hover(function() {
+    $(this).toggleClass("z-depth-2");
+  });
 
   $(".parallax").parallax();
-
 });
 
-$('.collapsible').collapsible();
+  $(".collapsible").collapsible();
+  $(".materialboxed").materialbox();
 
+  $(".carousel.carousel-slider").carousel({ fullWidth: true });
 
-$('.carousel.carousel-slider').carousel({fullWidth: true});
+  $('.member-box').hover(function(){
+    $('.member-info').toggleClass('is-hovered')
+  });

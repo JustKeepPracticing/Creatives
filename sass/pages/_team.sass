@@ -1,5 +1,33 @@
 .team
+  padding-bottom: 50px
   h1
     @extend %h1
     color: $light_grey
-    
+  h3
+    @extend %h3
+    left: 845px
+  p
+    text-transform: capitalize
+    color: $dark_blue
+    font-size: $font-medium
+    margin-bottom: 50px
+
+.member-box
+  img
+    margin: auto
+
+.member-info
+  width: 215px
+  margin: auto
+  background-color: $dark_blue
+  color: $white
+  text-transform: capitalize
+  padding: 5px 0
+
+.is-hovered
+  animation: swing 1s forwards
+
+  @keyframes swing
+    25%
+      opacity: .6
+      transform: rotate(-45deg)
