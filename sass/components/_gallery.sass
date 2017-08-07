@@ -1,5 +1,9 @@
 .flex-gallery
   column-count: 3
+  @media #{$s-mobile-device}
+    column-count: 2
+  @media #{$xs-mobile-device}
+    column-count: 1
 
 .gallery-part
   padding-bottom: 50px
@@ -11,3 +15,9 @@
     left: 768px
     text-transform: uppercase
     font-weight: 400
+    @media #{$tablet-device}
+      left: 189px
+    @media #{$xs-mobile-device}
+      left: 21px
+      font-size: 32px
+      top: 51px

@@ -4,6 +4,13 @@
   background-repeat: no-repeat
   background-size: cover
   height: 500px
+  @media #{$s-mobile-device}
+    background-size: contain
+    height: 270px
+    background-attachment: scroll
+  @media #{$xs-mobile-device}
+    height: 180px
+
   i
     animation: scale 2s infinite
 
@@ -13,12 +20,6 @@
     to
       transform: scale(1)
 
-  @media #{$s-mobile-device}
-    background-size: contain
-    height: 270px
-    background-attachment: scroll
-
-
 .parallax-container
   opacity: .7
 
@@ -27,6 +28,8 @@
   height: 372px
   font-size: $font-medium
   text-transform: capitalize
+  @media #{$xs-mobile-device}
+    height: 180px
   span
     margin-right: 10px
     font-style: italic
