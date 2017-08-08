@@ -24,5 +24,5 @@ $(document).ready(function() {
   $(".carousel.carousel-slider").carousel({ fullWidth: true });
 
   $('.member-box').hover(function(){
-    $('.member-info').toggleClass('is-hovered')
+    $(this).find('.member-info').toggleClass('is-hovered')
   });

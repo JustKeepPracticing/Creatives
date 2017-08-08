@@ -23,11 +23,28 @@
   color: $white
   text-transform: capitalize
   padding: 5px 0
+  opacity: 0
+  position: relative
+
+
+
 
 .is-hovered
-  animation: swing 1s forwards
+  animation: swing 1s ease-in-out forwards
+  @include transition(all 200ms ease-in-out)
 
-  @keyframes swing
-    25%
-      opacity: .6
-      transform: rotate(-45deg)
+@keyframes swing
+  25%
+    opacity: .6
+    top: -70px
+  50%
+    transform: rotate(-45deg) rotateX(-2deg)
+    opacity: 1
+    top: -60px
+  70%
+    transform: rotate(5deg)
+
+  100%
+    opacity: 1
+    top: -53px
+    transform: scale(1)
