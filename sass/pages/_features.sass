@@ -14,12 +14,20 @@
       background-color: darken($medium_blue, 3%)
     i
       @include line-height(100px)
+    @media #{$xs-mobile-device}
+      width: 90px
+      height: 90px
 
 .features
   h1
     @extend %h1
     + h3
       @extend %h3
+      @media #{$tablet-device}
+        left: 44px  
+      @media #{$s-mobile-device}
+        left: 0
+
 
 
 .slider-row

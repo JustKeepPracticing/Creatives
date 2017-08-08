@@ -9,5 +9,11 @@
   h3
     @extend %h3
     left: 515px
+    @media #{$tablet-device}
+      left: 17px
+      top: 50px
+    @media #{$xs-mobile-device}
+      font-size: 2rem
+      left: 0
   i
     color: white
