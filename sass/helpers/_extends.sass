@@ -5,15 +5,18 @@
   position: relative
   margin: 0
   color: $light_blue
-  @media #{$xs-mobile-device}
-    font-size: 170px
+  @media #{$s-mobile-device}
+    font-size: 150px
 
 %h3
   position: absolute
-  top: 65px
+  top: 55px
   left: 353px
   z-index: 2
-  text-transform: uppercase 
+  text-transform: uppercase
+  @media #{$s-mobile-device}
+    font-size: 2rem
+    top: 44px
 
 %h6
   font-size: 18px
