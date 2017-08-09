@@ -7,7 +7,13 @@ $(document).ready(function() {
   });
 
   $(".button-collapse").sideNav();
-  $(".scroll_down").click(function() {
+
+  $(".scroll_down").on('click',function() {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#target").offset().top
+    }, 2000);
+  });
 
   });
 
@@ -16,7 +22,6 @@ $(document).ready(function() {
   });
 
   $(".parallax").parallax();
-});
 
   $(".collapsible").collapsible();
   $(".materialboxed").materialbox();
