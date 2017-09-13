@@ -1,2 +1,2 @@
- //This website is all about love, work and rest  
+This website is all about love, work and rest  
 
