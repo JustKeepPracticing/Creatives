@@ -1,22 +1,25 @@
 .articles
-  h1
-    @extend %h1
-    color: $light_grey
   h3
     @extend %h3
-    left: 840px
-    font-weight: 400
-    @media #{$tablet-device}
-      left: 264px
-    @media #{$s-mobile-device}
-      left: 160px  
-    @media #{$xs-mobile-device}
-      left: 44px
+    left: 0
+    right: 0
+  a
+    color: 
+    // @media #{$tablet-device}
+    //   left: 264px
+    // @media #{$s-mobile-device}
+    //   left: 160px
+    // @media #{$xs-mobile-device}
+    //   left: 44px
   h4
     margin-bottom: 55px
     font-weight: 300
   h6
     @extend %h6
+
+.b-letter
+  img
+    position: relative
 
 .bpost-pic
   position: relative

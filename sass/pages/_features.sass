@@ -1,6 +1,7 @@
 .features
   background-color: $dark_blue
   padding-bottom: 45px
+  // padding-top: 48px
 
 .feature-icon
     width: 100px
@@ -18,17 +19,21 @@
       width: 90px
       height: 90px
 
-.features
-  h1
-    @extend %h1
-    + h3
-      @extend %h3
-      @media #{$tablet-device}
-        left: 44px  
-      @media #{$s-mobile-device}
-        left: 0
-
-
+.w-letter
+  h3
+    @extend %h3
+    position: absolute
+    top: 75px
+    left: 0
+    right: 0
+    @media #{$tablet-device}
+      left: 44px
+    @media #{$s-mobile-device}
+      left: 0
+  img
+    position: relative
+    @media #{$xs-mobile-device}
+      width: 75%
 
 .slider-row
   margin-top: -30px
@@ -46,9 +51,9 @@
 
 // medias
 
-@media #{$xs-mobile-device}
-  .features
-    .overlay-text
-      top: 59px
-      left: 6px
-      font-size: 2rem
+// @media #{$xs-mobile-device}
+//   .features
+//     .overlay-text
+//       top: 59px
+//       left: 6px
+//       font-size: 2rem
