@@ -28,6 +28,12 @@ $(document).ready(function() {
 
   $(".carousel.carousel-slider").carousel({ fullWidth: true });
 
+  // $('.member-box').hover(function(){
+  //   $(this).find('.member-info').toggleClass('is-hovered')
+  // });
   $('.member-box').hover(function(){
-    $(this).find('.member-info').toggleClass('is-hovered')
-  });
+    $(this).find('.member-info').addClass('is-hovered')
+  },function (){
+    $(this).find('.member-info').removeClass('is-hovered')
+  }
+);
