@@ -14,27 +14,6 @@
   .beating-heart
     animation: scale 2s infinite
 
-.scroll_top
-  right: 20px
-  position: fixed
-  z-index: 3
-  bottom: 80px
-  display: none
-  button
-    background-color: $dark_blue
-    &:hover
-      background-color: $dark_blue
-      @include transform(scale(1.1))
-      i
-        animation: top 1s linear infinite
-        @include transition(1s linear)
-
-
-  @keyframes top
-    from
-      transform: translateY(-10px)
-    to
-      transform: translateY(10px)
 
 
   @keyframes scale
