@@ -37,3 +37,19 @@ $(document).ready(function() {
     $(this).find('.member-info').removeClass('is-hovered')
   }
 );
+
+  $(window).scroll(function(){
+    if (document.body.scrollTop > 1200) {
+      $('.scroll_top').css("display", "block");
+    }
+    else {
+      $('.scroll_top').css("display", "none");
+    }
+  });
+
+  $(".scroll_top").on('click',function() {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("header").offset().top
+    }, 2000);
+  });
